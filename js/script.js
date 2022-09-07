@@ -27,6 +27,7 @@ console.log(images);
 
 let activeIndex = 0;
 buildCarousel(images, activeIndex);
+//MODIFICATO FUNZIONE "buildCarousel" AGGIUNGENDO ".url" QUANDO VENIVA CICLATO L'INDICE
 
 let idInterval = setInterval(moveCarouselForward, CHANGE_IMAGE_DELAY * 1000);
 

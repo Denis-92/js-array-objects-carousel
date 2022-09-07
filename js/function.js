@@ -20,7 +20,7 @@ function buildCarousel(urls, activeIndex) {
     const carouselThumbs = document.querySelector('.carousel-thumbs');
     let content = '';
     for (let i = 0; i < urls.length; i++) {
-        const url = urls[i].url;
+        const url = urls[i].url; // ".url" serve per puntare nel campo del object
         const imageClass = i === activeIndex ? 'carousel-img active' : 'carousel-img'
         content += `<img class="${imageClass}" src="${url}" alt="${url}" />`;
     }
