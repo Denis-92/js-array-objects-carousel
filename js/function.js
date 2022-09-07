@@ -11,7 +11,7 @@ function moveCarouselPrevious() {
     // se l'indice è in prima posizione si valorizza all'ultima posizione dell'array
     activeIndex = activeIndex > 0 ? activeIndex - 1 : images.length - 1;
     buildCarousel(images, activeIndex);
-    idInterval = setInterval(moveCarouselForward, CHANGE_IMAGE_DELAY * 1000);
+    idInterval = setInterval(moveCarouselPrevious, CHANGE_IMAGE_DELAY * 1000); // CAMBIATO ALL'INTERNO DI setInterval: moveCarouselForward -> moveCarouselPrevious, COSI' LA DIREZIONE CAMBIA CON IL CLICK SULLE FRECCE
 }
 
 
@@ -30,6 +30,7 @@ function buildCarousel(urls, activeIndex) {
 }
 
 
+// QUESTA FUNZIONE NON E' PIU' UTILIZZATA, SI PUO' CANCELLARE O COMMENTARE, O LASCIARLA NEL CASO VOGLIAMO VELOCEMENTE RIPRISTINARE LA VERSIONE DI PRIMA
 function createImageArray(numImages) {
     const images = [];
     for (let i = 1; i <= numImages; i++) {
@@ -77,6 +78,3 @@ function createNewImageArray() {
     return newImages;
 
 }
-
-
-//function createAlternativeImageArray() {}
