@@ -10,10 +10,17 @@ dopo 5 secondi la slide avanza automaticamente
 */
 
 // settings
-const NUM_IMAGES = 5;
+
+// const NUM_IMAGES = 5;
+// TOLTO VECCHIO SET DI IMMAGINI
+
 const CHANGE_IMAGE_DELAY = 5;
 
-const images = createImageArray(NUM_IMAGES);
+// const images = createImageArray(NUM_IMAGES);
+// TOLTO VECCHIO SET DI IMMAGINI E INSERISCO QUELLO NUOVO NELLA RIGA SUCCESSIVA
+const images = createNewImageArray();
+
+
 console.log(images);
 
 
